@@ -1,0 +1,168 @@
+body {
+    font-family: "Lilita One", serif;
+    margin: 0;
+    padding: 0;
+    background-color: #212121;
+    color: white;
+    text-align: center;
+}
+
+header {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav li {
+    padding: 5px 10px;
+}
+
+#locyzz {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    height: auto;
+}
+
+.selector-container {
+    text-align: center;
+    margin: 20px;
+}
+
+.selector-container label {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.selector-container select {
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.product {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: auto;
+    margin: 0 auto;
+    max-width: 800px; /* Ajusté pour les bannières YouTube */
+}
+
+.product img {
+    width: 100%;
+    max-width: 500px; /* Ajusté pour les bannières YouTube */
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-info {
+    text-align: left;
+}
+
+.product-info p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.product-info p:first-child {
+    text-decoration: underline;
+}
+
+.product-info button {
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+    transition: box-shadow 0.3s ease;
+    text-shadow: 0 0 10px white;
+    font-size: 18px;
+}
+
+.product-info button:hover {
+    box-shadow: 0 0 20px white;
+}
+
+.example-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.example-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.example-banners {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.example-banners img {
+    width: 100%;
+    max-width: 500px; /* Ajusté pour les bannières YouTube */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Styles pour les téléphones */
+@media screen and (max-width: 768px) {
+    .selector-container label {
+        font-size: 20px;
+    }
+
+    .product {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .product img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .product-info {
+        text-align: center;
+    }
+
+    .product-info button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .example-banners img {
+        width: 100%;
+        max-width: 300px;
+    }
+}

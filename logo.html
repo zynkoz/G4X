@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOCYZZ</title>
+    <link rel="stylesheet" href="style4.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="pp.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lilita+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><img src="locyzz.png" id="locyzz" /></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="selector-container">
+        <label for="category-selector">Sélectionne le produit que tu souhaite découvrir:</label>
+        <br>
+        <br>
+        <select id="category-selector" onchange="redirectToSelectedPage()">
+            <option value="select.html">‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎  Sélectionner ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ </option>
+            <option value="bannierediscord.html">Bannière Discord</option>
+            <option value="logo.html" selected>Logo</option>
+            <option value="miniatureyoutube.html">Miniature</option>
+            <option value="autredemande.html">Autre Demande</option>
+        </select>
+    </div>
+    <div class="product-container">
+        <div class="product">
+            <img src="graph/logo/1.png" alt="Image d'exemple">
+            <div class="product-info">
+                <p>Produit sélectionné : Logo</p>
+                <p>Prix : 1.00€</p>
+                <button onclick="redirectToSelectPage()">Commander</button>
+            </div>
+        </div>
+    </div>
+    <div class="example-section">
+        <p class="example-text">Exemple:</p>
+        <div class="example-banners">
+            <img src="graph/logo/1.png" alt="Exemple 1">
+            <img src="graph/logo/2.png" alt="Exemple 2">
+            <img src="graph/logo/3.png" alt="Exemple 3">
+            <img src="graph/logo/4.png" alt="Exemple 4">
+            <img src="graph/logo/5.png" alt="Exemple 5">
+            <img src="graph/logo/6.png" alt="Exemple 6">
+            <!-- Ajoutez plus d'exemples ici si nécessaire -->
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <script>
+        function redirectToSelectedPage() {
+            const select = document.getElementById("category-selector");
+            const value = select.value;
+
+            if (value) {
+                window.location.href = value;
+            }
+        }
+
+        function redirectToSelectPage() {
+            window.location.href = "redirectlogo.html";
+        }
+    </script>
+</body>
+</html>

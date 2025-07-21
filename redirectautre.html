@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOCYZZ</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="pp.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lilita+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><img src="locyzz.png" id="locyzz" /></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="product-container">
+        <div class="product">
+            <div class="product-info">
+                <p>Pour en discuter :</p>
+                <ol>
+                    <li>Rejoins le Discord</li>
+                    <li>Ouvre un ticket avec l'option Autre</li>
+                    <li>Et décris ce que tu souhaites</li>
+                </ol>
+                <button onclick="redirectToDiscord()">Rejoindre le Discord</button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <script>
+        function redirectToSelectedPage() {
+            const select = document.getElementById("category-selector");
+            const value = select.value;
+
+            if (value) {
+                window.location.href = value;
+            }
+        }
+
+        function redirectToDiscord() {
+            window.location.href = "https://discord.gg/locyzzgfx"; // Remplacez par votre lien d'invitation Discord
+        }
+    </script>
+</body>
+</html>

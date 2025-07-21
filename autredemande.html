@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zynko</title>
+    <link rel="stylesheet" href="style6.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="pp.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lilita+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><img src="locyzz.png" id="locyzz" /></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="selector-container">
+        <label for="category-selector">Sélectionne le produit que tu souhaite découvrir:</label>
+        <br>
+        <br>
+        <select id="category-selector" onchange="redirectToSelectedPage()">
+            <option value="select.html">‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎  Sélectionner ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ </option>
+            <option value="bannierediscord.html">Bannière Discord</option>
+            <option value="logo.html">Logo</option>
+            <option value="miniatureyoutube.html">Miniatures</option>
+            <option value="autredemande.html" selected>Autre Demande</option>
+        </select>
+    </div>
+    <div class="product-container">
+        <div class="product">
+            <div class="product-info">
+                <p>Pour tout autre demande nous pouvons en discuter ensemble</p>
+                <br>
+                <button onclick="redirectToSelectPage()">En discuter</button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <script>
+        function redirectToSelectedPage() {
+            const select = document.getElementById("category-selector");
+            const value = select.value;
+
+            if (value) {
+                window.location.href = value;
+            }
+        }
+
+        function redirectToSelectPage() {
+            window.location.href = "redirectautre.html";
+        }
+    </script>
+</body>
+</html>
